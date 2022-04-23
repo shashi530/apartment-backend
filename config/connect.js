@@ -3,7 +3,7 @@ require('dotenv').config();
 
 
 const connect = () => {
-  return mongoose.connect("mongodb+srv://shashikant:shashikant530@apartmentsbackend.sxnqm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+  return mongoose.connect(process.env.URL);
 };
 
 module.exports = connect;
