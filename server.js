@@ -14,9 +14,9 @@ const residentsController = require("./controllers/residents.controller.js")
 app.use(cors())
 app.use(express.json());
 
-app.use("/admin/", adminController)
-app.use("/flats/", flatsController)
-app.use("/residents/", residentsController)
+app.use("/admin", adminController)
+app.use("/flats", flatsController)
+app.use("/residents", residentsController)
 
 app.listen(port, async(req, res) => {
     try{
