@@ -3,7 +3,7 @@ require('dotenv').config();
 
 
 const connect = () => {
-  return mongoose.connect(process.env.URL);
+  return mongoose.connect(`${process.env.URL}`);
 };
 
 module.exports = connect;
